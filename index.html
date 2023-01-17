@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -14,43 +15,241 @@
     </div>
     <nav class="gnb">
       <div class="container">
-        헤더로고 중앙정렬
+        헤더(소개, 샵, 문의게시판)로고 중앙정렬(안해도 됨(유동부))
       </div>
     </nav>
   </header>
   <section class="section slide_wrap">
-    <div class="container">
-      슬라이드
-    </div>
+    <!-- 섹션에 들어갈 수 있는 것(현재 슬라이드, 베스트 아이템, 인스타, 아이콘)
+      new, 
+      review, 
+      포부: https://www.gdweb.co.kr/sub/view.asp?displayrow=60&Txt_key=all&Txt_word=&Txt_agnumber=&Txt_fgbn=5&Txt_bcode1=&Txt_gbflag=&Txt_bcode2=&Txt_bcode3=&Txt_bcode4=&Txt_bcode5=&Page=9&str_no=16955, 
+      세 칸으로 나눈 아이콘 섹션,  eat, good, less
+      전체에 사진이 들어간 섹션, border-radius: 20px, 
+      이벤트 섹션
+      슬라이드 메인 비주얼 말고 슬라이드 넣기 (pick)
+    -->
+    <img src="./img/slide.jpg" alt="slide1">
   </section>
   <section class="section main_store">
     <div class="container">
       <div class="section_title">
-        <h1>title</h1>
+        <h1>Best Product</h1>
       </div>
       <div class="product_wrap">
-        <div class="product">product</div>
-        <div class="product">product</div>
-        <div class="product">product</div>
-        <div class="product">product</div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/product1.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/product2.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/product1.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/product3.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
       </div>
-      <div class="product_wrap">
-        <div class="product">product</div>
-        <div class="product">product</div>
-        <div class="product">product</div>
-        <div class="product">product</div>
+      <!-- <div class="product_wrap">
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/product2.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/product3.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/product1.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/product2.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- <section class="section">
+    <div class="container">
+
+    </div>
+  </section> -->
+  <section class="section icon_wrap">
+    <div class="container">
+      <div class="section_title">
+        <h1>icon</h1>
+      </div>
+      <div class="icon_box">
+        <div class="icon_img">
+          <i class="ri-gift-line"></i>
+        </div>
+        <div class="icon_txt">
+          <h3>Gift</h3>
+          <span>이러니저러니해도 여기 빵이 가장 맛있어</span>
+        </div>
+      </div>
+      <div class="icon_box">
+        <div class="icon_img">
+          <i class="ri-thumb-up-line"></i>
+        </div>
+        <div class="icon_txt">
+          <h3>Good</h3>
+          <span>이러니저러니해도 여기 빵이 가장 맛있어</span>
+        </div>
+      </div>
+      <div class="icon_box">
+        <div class="icon_img">
+          <i class="ri-hearts-line"></i>
+        </div>
+        <div class="icon_txt">
+          <h3>Less</h3>
+          <span>이러니저러니해도 여기 빵이 가장 맛있어</span>
+        </div>
+      </div>
+      <div class="icon_big_img">
+        <img src="./img/big.jpg" alt="big">
       </div>
     </div>
   </section>
-  <section class="three section">
-    <div class="container"></div>
+
+  <section class="section main_store new">
+    <div class="container">
+      <div class="section_title">
+        <h1>new Product</h1>
+      </div>
+      <div class="product_wrap">
+        <a href="#" class="product">
+          <div class="product_img">
+            <img src="./img/new1.jpg" alt="product">
+          </div>
+          <div class="product_txt">
+            <p>이게 빵이름이다</p>
+            <span>5600원 정도</span>
+          </div>
+        </a>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/new2.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/new1.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/new2.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+      </div>
+      <div class="product_wrap">
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/new1.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/new2.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/new1.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <img src="./img/new2.jpg" alt="product">
+          </div>
+          <div class="product_txt">가격 등</div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="four section">
-    <div class="container"></div>
+
+  <section class="section instagram_wrap">
+    <div class="container">
+      <div class="insta_right">
+        <div class="section_title">
+          <h1>instagram_wrap</h1>
+        </div>
+        <div class="insta_col">
+          <div class="insta">
+            <div class="insta_img">
+              <img src="./img/insta1.jpg" alt="product">
+            </div>
+            <div class="insta_txt">인스타 텍스트</div>
+          </div>
+          <div class="insta">
+            <div class="insta_img">
+              <img src="./img/insta2.jpg" alt="product">
+            </div>
+            <div class="insta_txt">인스타 텍스트</div>
+          </div>
+        </div>
+        <div class="insta_col">
+          <div class="insta">
+            <div class="insta_img">
+              <img src="./img/insta3.jpg" alt="product">
+            </div>
+            <div class="insta_txt">인스타 텍스트</div>
+          </div>
+          <div class="insta">
+            <div class="insta_img">
+              <img src="./img/insta4.jpg" alt="product">
+            </div>
+            <div class="insta_txt">인스타 텍스트</div>
+          </div>
+        </div>
+        <div class="insta_col">
+          <div class="insta">
+            <div class="insta_img">
+              <img src="./img/insta5.jpg" alt="product">
+            </div>
+            <div class="insta_txt">인스타 텍스트</div>
+          </div>
+          <div class="insta">
+            <div class="insta_img">
+              <img src="./img/insta6.jpg" alt="product">
+            </div>
+            <div class="insta_txt">인스타 텍스트</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="five section">
-    <div class="container"></div>
-  </section>
+
+
   <footer class="footer">
     <div class="container"></div>
   </footer>

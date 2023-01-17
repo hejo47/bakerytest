@@ -1,1 +1,214 @@
-@import"https://fonts.googleapis.com/css2?family=Fugaz+One&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap";*{font-family:"Fugaz One","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*{margin:0;padding:0}ul,ol,li{list-style:none}a{text-decoration:none;color:#333}.container{width:100%;max-width:1640px;margin:0 auto;padding:5px 40px 0}.section_title{text-align:center}.header{height:115px;background-color:#deb887}.header .header_top{height:35px;background-color:#f0f8ff}.section.slide_wrap{width:100%;height:650px;background-color:bisque}.section.main_store .container{padding-top:60px;padding-bottom:60px}.section.main_store .container .product_wrap{display:flex;flex-direction:row;justify-content:center;align-items:center;column-gap:30px;width:100%;height:100%}.section.main_store .container .product_wrap .product{width:25%;padding-bottom:25%;border:1px solid #000}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Noto Sans KR", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  width: calc(100% - 40px);
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 5px 20px 0;
+}
+
+.section_title {
+  text-align: center;
+  width: 100%;
+}
+
+/* header */
+.header {
+  height: 115px;
+  background-color: burlywood;
+}
+.header .header_top {
+  height: 35px;
+  background-color: aliceblue;
+}
+
+.section.slide_wrap {
+  width: 100%;
+  height: 650px;
+  background-color: bisque;
+  overflow: hidden;
+}
+.section.slide_wrap img {
+  width: 100%;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 60%;
+     object-position: center 60%;
+  display: block;
+}
+.section.main_store .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  row-gap: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section.main_store .container .product_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  -moz-column-gap: 1%;
+       column-gap: 1%;
+  width: 100%;
+  height: 100%;
+}
+.section.main_store .container .product_wrap .product {
+  width: 24.25%;
+  max-height: 100%;
+}
+.section.main_store .container .product_wrap .product .product_img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.section.main_store .container .product_wrap .product .product_img img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  transition: 0.7s all ease;
+}
+.section.main_store .container .product_wrap .product .product_txt {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.section.main_store .container .product_wrap .product:hover .product_img img {
+  transform: scale(1.1);
+}
+.section.main_store.new {
+  background-color: rosybrown;
+}
+.section.instagram_wrap .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section.instagram_wrap .container .insta_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  -moz-column-gap: 1%;
+       column-gap: 1%;
+}
+.section.instagram_wrap .container .insta_right .section_title {
+  width: 40%;
+}
+.section.instagram_wrap .container .insta_right .insta_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  width: 33.3333333333%;
+}
+.section.instagram_wrap .container .insta_right .insta_col .insta {
+  width: 100%;
+}
+.section.instagram_wrap .container .insta_right .insta_col .insta .insta_img {
+  background-color: bisque;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.section.instagram_wrap .container .insta_right .insta_col .insta .insta_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.section.instagram_wrap .container .insta_right .insta_col .insta .insta_txt {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.section.icon_wrap {
+  width: 100%;
+}
+.section.icon_wrap .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+  -moz-column-gap: 1%;
+       column-gap: 1%;
+}
+.section.icon_wrap .container .section_title {
+  margin-bottom: 30px;
+}
+.section.icon_wrap .container .icon_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32.6666666667%;
+}
+.section.icon_wrap .container .icon_box .icon_img i {
+  font-size: 100px;
+  margin-bottom: 40px;
+}
+.section.icon_wrap .container .icon_box .icon_txt {
+  text-align: center;
+}
+.section.icon_wrap .container .icon_box .icon_txt h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.section.icon_wrap .container .icon_big_img {
+  border: 1px solid #000;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.section.icon_wrap .container .icon_big_img img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.footer {
+  height: 200px;
+  border-top: 1px solid #000;
+}/*# sourceMappingURL=style.css.map */
